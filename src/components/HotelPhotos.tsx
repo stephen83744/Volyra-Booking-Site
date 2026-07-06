@@ -12,7 +12,7 @@ const HotelPhotos :React.FC <HotelPhotosProps>=({photos})=>{
               />
             </div>
             <div className="grid grid-cols-2 gap-2">
-              {photos.slice(1, 5).map((photo) => (
+              {photos.slice(1, 5).map((photo:any) => (
                 <div
                   key={photo.id}
                   className="aspect-square overflow-hidden rounded-lg cursor-pointer hover:opacity-80 transition-opacity" >
