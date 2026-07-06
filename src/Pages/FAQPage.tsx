@@ -43,7 +43,7 @@ const FAQPage: React.FC = () => {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
           <div className="bg-gray-900 border border-gray-800 rounded-xl">
             <div className="divide-y divide-gray-800">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq: any, index: number) => (
                 <div key={index} className="p-6">
                   <button
                     onClick={() => toggleItem(index)}
