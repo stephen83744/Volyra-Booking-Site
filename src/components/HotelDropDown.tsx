@@ -1,6 +1,11 @@
 import { MapPin } from "lucide-react";
 
-const SearchResults = ({ results, handleClick }) => {
+interface SearchResultsProps {
+  results: any[];
+  handleClick: (result: any) => void;
+}
+
+const SearchResults:React.FC<SearchResultsProps> = ({ results, handleClick }) => {
   if (!results.length) return null;
   return (
     <div>
