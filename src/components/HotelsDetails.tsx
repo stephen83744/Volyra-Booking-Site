@@ -29,7 +29,7 @@ const HotelDetails :React.FC <HotelDetailsProps>=({hotels})=>{
               <div>
                 <h2 className="font-bold text-lg mb-4 text-white">Amenities</h2>
                 <div className="grid grid-cols-2 gap-3">
-                  {hotels?.top_ufi_benefits.map((amenity, index) => {
+                  {hotels?.top_ufi_benefits.map((amenity: any, index: number) => {
                     return (
                       <div key={index} className="flex items-center gap-2 text-gray-300">
                         <span>{amenity.translated_name}</span>
@@ -42,7 +42,7 @@ const HotelDetails :React.FC <HotelDetailsProps>=({hotels})=>{
               <div>
                 <h2 className="font-bold text-lg mb-4 text-white">Hotel Features</h2>
                 <div className="grid grid-cols-2 gap-2">
-                  {hotels?.facilities_block?.facilities.map((feature, index) => (
+                  {hotels?.facilities_block?.facilities.map((feature: any, index: number) => (
                     <div key={index} className="flex items-center gap-2 text-sm text-gray-300">
                       <Check className="w-4 h-4 text-green-500" />
                       <span>{feature.name}</span>
