@@ -37,7 +37,7 @@ interface RoomListProps {
                         </div>
 
                         <div className="flex flex-wrap gap-2">
-                          {room.highlights?.map((feature, index) => (
+                          {room.highlights?.map((feature: any, index: number) => (
                             <span
                               key={index}
                               className="px-3 py-1 bg-gray-800 border border-gray-700 rounded-full text-sm text-gray-300"
